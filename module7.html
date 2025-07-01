@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Module 7: Fact or Fallacy</title>
+  <title>Module 7: Fact or Fallacy?</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,12 +11,50 @@
       background-color: #fefefe;
       color: #333;
       line-height: 1.6;
+      padding-top: 80px;
     }
 
     h1 {
       text-align: center;
       color: #2c3e50;
       margin-bottom: 40px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      background-color: #2c3e50;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar {
+      list-style: none;
+      margin: 0;
+      padding: 10px 20px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .navbar li {
+      display: inline;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 12px;
+      background-color: #3498db;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #2980b9;
     }
 
     details {
@@ -43,97 +81,124 @@
       margin: 5px 0;
     }
 
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     .back {
       display: inline-block;
       margin-top: 30px;
       text-decoration: none;
       color: #3498db;
     }
-
-    nav {
-  margin-bottom: 30px;
-}
-
-.navbar {
-  list-style: none;
-  padding: 10px;
-  background-color: #2c3e50;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 8px;
-}
-
-.navbar li {
-  display: inline;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #fff;
-  padding: 8px 12px;
-  background-color: #3498db;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.navbar a:hover {
-  background-color: #2980b9;
-}
-
   </style>
 </head>
 <body>
-  <div id="navbar-placeholder"></div>
 
-  <h1>Module 7: Fact or Fallacy</h1>
+<div id="navbar-placeholder"></div>
 
-  <details>
-    <summary>7.1 – Inquiry Question 1: How can scientific thinking help evaluate claims?</summary>
-    <details>
-      <summary>7.1.2 – Evaluate the reliability of scientific information</summary>
-      <ul>
-        <li><strong>7.1.2.1</strong> — <a href="resources/7.1.2.1_notes.pdf">Notes</a>, <a href="resources/7.1.2.1_video.mp4">Video</a></li>
-        <li><strong>7.1.2.2</strong> — <a href="resources/7.1.2.2_activity.pdf">Activity</a></li>
-      </ul>
-    </details>
-  </details>
 
-  <details>
-    <summary>7.2 – Inquiry Question 2: How do scientists distinguish good science from pseudoscience?</summary>
-    <details>
-      <summary>7.2.3 – Identify characteristics of pseudoscience</summary>
-      <ul>
-        <li><strong>7.2.3.1</strong> — <a href="resources/7.2.3.1_slides.pdf">Slides</a>, <a href="resources/7.2.3.1_prac.pdf">Practical</a></li>
-      </ul>
-    </details>
-  </details>
+  <h1>Module 7: Fact or Fallacy?</h1>
 
   <details open>
-    <summary>7.4 – Inquiry Question 4: How has science been misused?</summary>
-    <details open>
-      <summary>7.4.4 – Evaluate the misuse of scientific evidence</summary>
-      <ul>
-        <li><strong>7.4.4.1</strong> — <a href="resources/7.4.4.1_notes.pdf">Notes</a>, <a href="resources/7.4.4.1_video.mp4">Video</a></li>
-        <li><strong>7.4.4.2</strong> — <a href="resources/7.4.4.2_case_study.pdf">Case Study</a></li>
-        <li><strong>7.4.4.3</strong> — <a href="resources/7.4.4.3_activity.pdf">Worksheet</a></li>
-      </ul>
-    </details>
+    <summary>7.1 – How can a claim be tested?</summary>
+    <ul>
+      <li>7.1.1 – Plan and conduct an investigation based on testing a claim, and consider:
+        <ul>
+          <li>7.1.1.1 – Validity of the experimental design</li>
+          <li>7.1.1.2 – Reliability of the data obtained</li>
+          <li>7.1.1.3 – Accuracy of the procedure, including random and systematic error</li>
+        </ul>
+      </li>
+      <li>7.1.2 – Using examples, evaluate the impact that sample selection and sample sizes can have on the results of an investigation</li>
+      <li>7.1.3 – Compare emotive advertising with evidence-based claims, including but not limited to:
+        <ul>
+          <li>7.1.3.1 – Health claims on food packaging</li>
+          <li>7.1.3.2 – Claims about the efficacy of a product</li>
+        </ul>
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>7.2 – What factors can affect the way data can be interpreted, analysed and understood?</summary>
+    <ul>
+      <li>7.2.1 – Using examples, justify the use of placebos, double-blind trials and control groups in order to draw valid conclusions</li>
+      <li>7.2.2 – Evaluate the impact of societal and economic influences on the collection and interpretation of data, including but not limited to:
+        <ul>
+          <li>7.2.2.1 – Predicting variations in climate</li>
+          <li>7.2.2.2 – Suggesting remedies for health conditions</li>
+          <li>7.2.2.3 – Manipulating statistical data</li>
+        </ul>
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>7.3 – What type of evidence is needed to draw valid conclusions?</summary>
+    <ul>
+      <li>7.3.1 – Evaluate how evidence of a correlation can be misinterpreted as causation, including but not limited to:
+        <ul>
+          <li>7.3.1.1 – The Hawthorne effect</li>
+          <li>7.3.1.2 – 1991 study linking HRT to coronary heart disease</li>
+          <li>7.3.1.3 – The Mozart Effect on child development</li>
+        </ul>
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>7.4 – How does the reporting of science influence the general public’s understanding of the subject?</summary>
+    <ul>
+      <li>7.4.1 – Examine a contemporary scientific debate and how it is portrayed in the media, including:
+        <ul>
+          <li>7.4.1.1 – Accuracy of information</li>
+          <li>7.4.1.2 – Validity of data</li>
+          <li>7.4.1.3 – Reliability of information sources</li>
+        </ul>
+      </li>
+      <li>7.4.2 – Evaluate the use of the terms ‘theory’, ‘hypothesis’, ‘belief’ and ‘law’ in media reporting</li>
+      <li>7.4.3 – Compare reporting between a peer-reviewed article and a popular media article</li>
+      <li>7.4.4 – Analyse how conflicts of interest can distort evidence and discuss countermeasures, including:
+        <ul>
+          <li>7.4.4.1 – Tobacco industry and lung cancer</li>
+          <li>7.4.4.2 – Fossil fuel industry and climate change</li>
+          <li>7.4.4.3 – Commercial industries researching products</li>
+          <li>7.4.4.4 – Asbestos mining and lung cancer</li>
+        </ul>
+      </li>
+      <li>7.4.5 – Describe the halo effect and give examples, including:
+        <ul>
+          <li>7.4.5.1 – Celebrity endorsements</li>
+          <li>7.4.5.2 – Misleading claims by popular brands</li>
+        </ul>
+      </li>
+      <li>7.4.6 – Analyse pseudo-scientific claims and how language is manipulated, including:
+        <ul>
+          <li>7.4.6.1 – Astrology</li>
+          <li>7.4.6.2 – Numerology</li>
+          <li>7.4.6.3 – Iridology</li>
+        </ul>
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>7.5 – Can the scientific community and process of peer review find ‘the truth’?</summary>
+    <ul>
+      <li>7.5.1 – Research a scientist who falsified results and discuss how it was uncovered</li>
+      <li>7.5.2 – Analyse the ‘publish or perish’ pressure and its implications</li>
+      <li>7.5.3 – Evaluate the explosion of publications and ability to validate them, including:
+        <ul>
+          <li>7.5.3.1 – Pons and Fleischmann’s cold fusion (1989)</li>
+          <li>7.5.3.2 – Maggie Simpson and Edna Krabapple spoof paper (2014)</li>
+          <li>7.5.3.3 – Tom Spears’ nonsense paper (2013)</li>
+        </ul>
+      </li>
+      <li>7.5.4 – Analyse benefits of peer review for scientific advancement</li>
+      <li>7.5.5 – Discuss the impact of fake science journals on public trust</li>
+    </ul>
   </details>
 
   <a class="back" href="hsc.html">&larr; Back to HSC Course</a>
-  
-<script>
+
+  <script>
   fetch("navbar.html")
     .then(res => res.text())
     .then(data => {
