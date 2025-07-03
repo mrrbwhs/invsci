@@ -1,104 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Investigating Science</title>
-  <style>
-    body {
-      margin: 40px;
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      /* height: 100vh; */
-      text-align: center;
-      padding-top: 70px; /* space for fixed navbar */
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investigating Science</title>
+    <style>
+      body {
+        margin: 40px;
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+        text-align: center;
+        padding-top: 70px; /* space for fixed navbar */
+      }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 60px;
-      color: #2c3e50;
-    }
+      h1 {
+        font-size: 3em;
+        margin-bottom: 60px;
+        color: #2c3e50;
+      }
 
-    .button-container {
-      display: flex;
-      gap: 40px;
-    }
+      .button-container {
+        display: flex;
+        gap: 40px;
+      }
 
-    a.button {
-      display: inline-block;
-      padding: 20px 40px;
-      font-size: 1.2em;
-      text-decoration: none;
-      background-color: #3498db;
-      color: white;
-      border-radius: 10px;
-      transition: background-color 0.3s;
-    }
+      a.button {
+        display: inline-block;
+        padding: 20px 40px;
+        font-size: 1.2em;
+        text-decoration: none;
+        background-color: #3498db;
+        color: white;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+      }
 
-    a.button:hover {
-      background-color: #2980b9;
-    }
+      a.button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
 
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 999;
-      background-color: #2c3e50;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .navbar {
-      list-style: none;
-      margin: 0;
-      padding: 15px 20px;
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .navbar li {
-      display: inline;
-    }
-
-    .navbar a {
-      text-decoration: none;
-      color: #fff;
-      padding: 8px 12px;
-      background-color: #3498db;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .navbar a:hover {
-      background-color: #2980b9;
-    }
-
-
-  </style>
-</head>
-<body>
-<div id="navbar-placeholder"></div>
-
-  <h1>Investigating Science</h1>
-  <div class="button-container">
-    <a class="button" href="prelim.html">Preliminary Course</a>
-    <a class="button" href="hsc.html">HSC Course</a>
-  </div>
-  <script>
-  fetch("navbar.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("navbar-placeholder").innerHTML = data;
-    });
-</script>
-
-</body>
+    <h1>Investigating Science</h1>
+    <div class="button-container">
+      <a class="button" href="prelim.html">Preliminary Course</a>
+      <a class="button" href="hsc.html">HSC Course</a>
+    </div>
+    <script>
+      fetch("partials/header.html")
+        .then((res) => res.text())
+        .then(
+          (data) =>
+            (document.getElementById("navbar-placeholder").innerHTML = data)
+        );
+    </script>
+  </body>
 </html>
