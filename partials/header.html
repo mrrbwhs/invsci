@@ -5,7 +5,7 @@
     <li><a href="prelim.html">Prelim</a></li>
     <li><a href="hsc.html">HSC</a></li>
     <li class="dropdown">
-      <a href="#" class="dropbtn">Modules</a>
+      <button class="dropbtn">Modules</button>
       <div class="dropdown-content">
         <a href="module1.html">Module 1</a>
         <a href="module2.html">Module 2</a>
@@ -17,6 +17,19 @@
         <a href="module8.html">Module 8</a>
       </div>
     </li>
+    <!-- <li class="dropdown">
+      <a href="#" class="dropbtn">Modules</a>
+      <div class="dropdown-content">
+        <a href="module1.html">Module 1</a>
+        <a href="module2.html">Module 2</a>
+        <a href="module3.html">Module 3</a>
+        <a href="module4.html">Module 4</a>
+        <a href="module5.html">Module 5</a>
+        <a href="module6.html">Module 6</a>
+        <a href="module7.html">Module 7</a>
+        <a href="module8.html">Module 8</a>
+      </div>
+    </li> -->
   </ul>
 </nav>
 
@@ -55,8 +68,7 @@
     position: relative;
   }
 
-  .navbar a,
-  .dropbtn {
+  .navbar a {
     text-decoration: none;
     color: #fff;
     padding: 8px 12px;
@@ -66,21 +78,42 @@
     display: inline-block;
   }
 
-  .navbar a:hover,
-  .dropbtn:hover {
+  .navbar a:hover {
     background-color: #2980b9;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-family: "Segoe UI", sans-serif;
+    transition: background-color 0.3s;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
   }
 
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ecf0f1;
-    min-width: 160px;
     top: 100%;
-    left: 0;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    min-width: 180px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    z-index: 1;
+    padding: 8px 0;
   }
 
   .dropdown-content a {
@@ -88,13 +121,27 @@
     padding: 10px 16px;
     text-decoration: none;
     display: block;
+    font-size: 14px;
+    transition: background-color 0.2s;
   }
 
   .dropdown-content a:hover {
-    background-color: #dcdcdc;
+    background-color: #f0f0f0;
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  /* Optional: fade-in effect */
+  .dropdown-content {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
   }
 </style>
