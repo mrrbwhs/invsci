@@ -255,13 +255,12 @@
 
     <a class="back" href="hsc.html">&larr; Back to HSC Course</a>
 
+    <div id="navbar-placeholder"></div>
+
+    <!-- Load navbar -->
+    <script src="scripts/header.js"></script>
     <script>
-      fetch("partials/header.html")
-        .then((res) => res.text())
-        .then(
-          (data) =>
-            (document.getElementById("navbar-placeholder").innerHTML = data)
-        );
+      loadHeader();
     </script>
   </body>
 </html>

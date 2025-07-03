@@ -66,27 +66,12 @@
       <a class="button" href="prelim.html">Preliminary Course</a>
       <a class="button" href="hsc.html">HSC Course</a>
     </div>
+    <div id="navbar-placeholder"></div>
+
+    <!-- Load navbar -->
+    <script src="scripts/header.js"></script>
     <script>
-      fetch("partials/header.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("navbar-placeholder").innerHTML = data;
-
-          // ✅ Wait for content to be inserted, then wire up dropdown
-          const button = document.getElementById("modulesButton");
-          const dropdown = document.getElementById("moduleDropdown");
-
-          if (button && dropdown) {
-            button.addEventListener("click", (e) => {
-              e.stopPropagation();
-              dropdown.classList.toggle("show");
-            });
-
-            window.addEventListener("click", () => {
-              dropdown.classList.remove("show");
-            });
-          }
-        });
+      loadHeader();
     </script>
   </body>
 </html>
