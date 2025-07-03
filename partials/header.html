@@ -1,0 +1,88 @@
+<!-- header.html -->
+<nav>
+  <ul class="navbar">
+    <li><a href="index.html">Portal</a></li>
+    <li><a href="prelim.html">Prelim</a></li>
+    <li><a href="hsc.html">HSC</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Modules</a>
+      <div class="dropdown-content">
+        <a href="module1.html">Module 1</a>
+        <a href="module2.html">Module 2</a>
+        <a href="module3.html">Module 3</a>
+        <a href="module4.html">Module 4</a>
+        <a href="module5.html">Module 5</a>
+        <a href="module6.html">Module 6</a>
+        <a href="module7.html">Module 7</a>
+        <a href="module8.html">Module 8</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    width: 100%;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .navbar {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .navbar li {
+    position: relative;
+  }
+
+  .navbar a,
+  .dropbtn {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+  }
+
+  .navbar a:hover,
+  .dropbtn:hover {
+    background-color: #2980b9;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ecf0f1;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .dropdown-content a {
+    color: #2c3e50;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #dcdcdc;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
