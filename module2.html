@@ -350,12 +350,14 @@
     </details>
 
     <a class="back" href="hsc.html">&larr; Back to HSC Course</a>
+
     <script>
-      fetch("navbar.html")
+      fetch("partials/header.html")
         .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("navbar-placeholder").innerHTML = data;
-        });
+        .then(
+          (data) =>
+            (document.getElementById("navbar-placeholder").innerHTML = data)
+        );
     </script>
   </body>
 </html>
